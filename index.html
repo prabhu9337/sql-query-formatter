@@ -15,19 +15,19 @@
         <!-- Container for column input and button in one row -->
         <div class="input-row">
             <textarea id="columnInput" placeholder="Enter column names (one per line)"></textarea>
-            <button onclick="generateColumnMapping()">Generate Column Mapping</button>
+            <button id="generateButton">Generate Column Mapping</button>
         </div>
 
         <!-- Container for SQL query input and button in one row -->
         <div class="input-row">
             <textarea id="sqlInput" placeholder="Enter your SQL query here..."></textarea>
-            <button onclick="convertQuery()">Convert</button>
+            <button id="convertButton">Convert</button>
         </div>
 
         <!-- Output for converted SQL -->
         <div class="output-row">
             <textarea id="sqlOutput" placeholder="Converted SQL query will appear here..." readonly></textarea>
-            <button onclick="copyOutput()">Copy</button> <!-- Copy Button -->
+            <button id="copyButton">Copy</button> <!-- Copy Button -->
         </div>
     </div>
 

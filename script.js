@@ -53,3 +53,16 @@ function copyOutput() {
     // Optionally, provide feedback to the user
     alert('SQL query copied to clipboard!');
 }
+
+// Adding event listeners to buttons using DOM selectors
+document.addEventListener('DOMContentLoaded', () => {
+    // Get buttons via DOM selectors
+    const generateButton = document.getElementById('generateButton');
+    const convertButton = document.getElementById('convertButton');
+    const copyButton = document.getElementById('copyButton');
+
+    // Add event listeners for each button
+    generateButton.addEventListener('click', generateColumnMapping);
+    convertButton.addEventListener('click', convertQuery);
+    copyButton.addEventListener('click', copyOutput);
+});

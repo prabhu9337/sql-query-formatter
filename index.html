@@ -20,12 +20,15 @@
 
         <!-- Container for SQL query input and button in one row -->
         <div class="input-row">
-            <textarea id="sqlInput" placeholder="Enter your SQL query here..." class="query-textarea"></textarea>
+            <textarea id="sqlInput" placeholder="Enter your SQL query here..."></textarea>
             <button onclick="convertQuery()">Convert</button>
         </div>
 
         <!-- Output for converted SQL -->
-        <textarea id="sqlOutput" placeholder="Converted SQL query will appear here..." readonly></textarea>
+        <div class="output-row">
+            <textarea id="sqlOutput" placeholder="Converted SQL query will appear here..." readonly></textarea>
+            <button onclick="copyOutput()">Copy</button> <!-- Copy Button -->
+        </div>
     </div>
 
     <script src="script.js"></script>
